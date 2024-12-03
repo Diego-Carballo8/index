@@ -115,6 +115,38 @@
         <img src="https://i.imgur.com/4icOExh.png" alt="Futbol Varonil" width="1150" height="500">
 
     </main>
+    <section class="calendar-container">
+        <h2>Calendario de Partidos</h2>
+        <div id="calendar-nav">
+            <button id="prev-month" onclick="changeMonth(-1)">Anterior</button>
+            <span id="month-year"></span>
+            <button id="next-month" onclick="changeMonth(1)">Siguiente</button>
+        </div>
+        <div id="calendar"></div>
+        
+        <!-- Formulario para agregar evento -->
+        <div id="event-form" style="display: none;">
+            <h3>Agregar Evento</h3>
+            <form id="add-event-form">
+                <label for="event-title">Título del Evento:</label>
+                <input type="text" id="event-title" required />
+                <br />
+                <label for="event-description">Descripción:</label>
+                <textarea id="event-description" required></textarea>
+                <br />
+                <button type="submit">Guardar Evento</button>
+                <button type="button" onclick="hideEventForm()">Cancelar</button>
+            </form>
+        </div>
+    
+        <!-- Detalles del evento -->
+        <div id="event-details" style="display: none;">
+            <h3>Detalles del Evento</h3>
+            <p id="event-description-text"></p>
+            <button onclick="hideEventDetails()">Cerrar</button>
+        </div>
+    </section>
+    
     <footer>
         <p>&copy; Todos los derechos reservados.
             <a href="contactos.html">Contáctanos</a>
