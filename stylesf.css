@@ -42,15 +42,6 @@
 .imagen {
     width: 550%; /* Ajusta el tamaño de las imágenes */
 }
-.header-fondo {
-    background: url('https://i.imgur.com/IGdONBT.jpeg') no-repeat center;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 100px 100px;
-    margin: 10;
-}
-
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
@@ -287,7 +278,7 @@ nav ul li a:hover {
 }
 
 /* Estilo para los encabezados h4 */
-main h4 {
+main {
     text-align: justify;
     margin: 20px 0;
     font-size: 1.2em;
@@ -360,7 +351,7 @@ footer a:hover {
 }
 
 /* Texto en el main */
-main h4 {
+main{
     text-align: justify;
     margin: 20px 0;
     font-size: 1.5em;
