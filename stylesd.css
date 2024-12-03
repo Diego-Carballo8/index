@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #e75656f8, #d14972, #d64f4ff8, #da1e57); /* Fondo difuminado */
+    background: linear-gradient(135deg, rgba(255, 99, 71, 0.8), rgba(255, 0, 0, 0.6), rgba(139, 0, 0, 0.5));
     color: #000000;
     line-height: 1.6;
 }
@@ -124,53 +124,29 @@ footer a:hover {
 
 /* Texto en el main */
 main h4 {
-    text-align: justify;
+    text-align: center;
     margin: 20px 0;
     font-size: 1.5em;
-    color: #333333; /* Color más suave */
+    color: #000000; /* Color más suave */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418); /* Sombra ligera */
 }
-/* Pista de carrera (ahora vertical) */
-.race-track {
-    position: fixed;
-    top: 10%;
-    left: 5%; /* Ubicación en la página */
-    width: 20px; /* Ancho de la pista */
-    height: 80%; /* Altura de la pista */
-    background-color: #ddd;
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-}
 
-/* Serpiente */
-.snake {
-    position: absolute;
-    top: 0; /* Inicia en la parte superior de la pista */
-    left: 0;
-    width: 20px;
-    height: 40px; /* Cambiar ancho y alto para que encaje en una pista vertical */
-    background-color: green;
-    border-radius: 10px;
-    transition: top 0.1s linear; /* Movimiento suave hacia abajo */
-}
-
-/* Línea de meta */
-.finish-line {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 20px;
-    height: 10px;
-    background-color: red;
-}
-.contenedor-imagenes {
+/* Imagenes */
+.imagenes {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* Ajusta el tamaño máximo */
-    margin: 0 auto; /* Centra el contenedor */
+    width: 600px;
+    height: 430px;
 }
-.imagen {
-    width: 45%; /* Ajusta el tamaño de las imágenes */
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
