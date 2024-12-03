@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COBRAS BASKETBALL</title>
+    <link rel="stylesheet" href="stylesb.css"> <!-- Enlace a tu archivo CSS -->
+</head>
+<body>
+    <header class="header-fondoo">
+        <h1 class="tema_basketball">COBRAS BASKETBALL</h1> <!-- Título principal -->
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Regresar</a></li> <!-- List item agregado para una mejor semántica -->
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-contenido"><b>El equipo de basketball Las Cobras, dirigido por el coach Aldo Ortega, tuvo una destacada participación en el Torneo Estatal de Basketball 2024, consolidándose como uno de los equipos más competitivos y admirados del evento. Bajo el liderazgo de su entrenador, quien ha sabido inculcar disciplina, compromiso y un profundo entendimiento del juego, Las Cobras lograron posicionarse en el tercer lugar del torneo, dejando una huella significativa en la competencia.<br>
+        El torneo, que reunió a los mejores equipos de la región, se llevó a cabo en las instalaciones del CBTis 74, un escenario que se convirtió en testigo de emocionantes enfrentamientos y un gran despliegue de talento deportivo. Desde el inicio, Las Cobras demostraron su fortaleza como equipo, basando su desempeño en un juego colectivo que resaltó la importancia de la unión, la comunicación y la confianza mutua entre los jugadores.<br>
+        A pesar de enfrentar algunos retos y partidos complicados, el equipo nunca perdió su enfoque. Cada encuentro fue una oportunidad para aprender, crecer y demostrar el talento que los llevó a ganarse el respeto de la comunidad deportiva. Este tercer lugar es el resultado de su dedicación, perseverancia y amor por el deporte, y marca un paso importante en su trayectoria como equipo.<br>
+        A continuación, se presentan los resultados de los partidos que disputaron durante el torneo, los cuales reflejan su desempeño sólido y su capacidad para enfrentar desafíos con valentía y compromiso. Sin duda, este logro es solo el comienzo de lo que promete ser una etapa de éxitos para Las Cobras, quienes continúan trabajando para llegar aún más lejos en futuras competencias.<br>
+        La participación en el Torneo Estatal 2024 no solo fue un logro deportivo, sino también un momento de orgullo para la comunidad que apoya al equipo. Padres, amigos y seguidores estuvieron presentes durante los partidos, alentando y celebrando cada punto anotado, fortaleciendo el sentido de pertenencia y motivando aún más a los jugadores. El esfuerzo colectivo, desde los entrenamientos hasta el último silbatazo del torneo, es un testimonio del potencial que tiene este equipo y del impacto que puede generar en el deporte local y estatal.
+
+        Con el tercer lugar como un gran paso hacia adelante, el equipo y su entrenador miran hacia el futuro con optimismo y determinación, listos para seguir trabajando duro y alcanzar nuevas metas.</b></main>
+       
+
+       
+        <!-- Aquí está la tabla de resultados -->
+        <div class="tabla-container">
+            <h3>Tabla de Resultados Varonil</h3>
+            <table class="tabla-informacion">
+                <thead>
+                    <tr>
+                        <th>Partido</th>
+                        <th>Resultado</th>
+                        <th>Marcador</th>
+                        <th>Posición Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Primer Partido</td>
+                        <td>Derrota</td>
+                        <td>40-35</td>
+                        <td>Primera derrota, obligados a ganar</td>
+                    </tr>
+                    <tr>
+                        <td>Segundo Partido</td>
+                        <td>Victoria</td>
+                        <td>37-14</td>
+                        <td>Avanzaron a semifinales</td>
+                    </tr>
+                    <tr>
+                        <td>Tercer Partido</td>
+                        <td>Derrota</td>
+                        <td>22-21</td>
+                        <td>Eliminados de la final</td>
+                    </tr>
+                    <tr>
+                        <td>Cuarto Partido</td>
+                        <td>Victoria</td>
+                        <td>38-23</td>
+                        <td>3er Lugar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tabla-container">
+            <h3>Tabla de Resultados Femenil</h3>
+            <table class="tabla-informacion">
+                <thead>
+                    <tr>
+                        <th>Partido</th>
+                        <th>Resultado</th>
+                        <th>Marcador</th>
+                        <th>Posición Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Primer Partido</td>
+                        <td>Derrota</td>
+                        <td>28-2</td>
+                        <td>Primera derrota, Cuarto lugar de tabla</td>
+                    </tr>
+                    <tr>
+                        <td>Segundo Partido</td>
+                        <td>Derrota</td>
+                        <td>5-4</td>
+                        <td>Segunda derrota, cuarto lugar de tabla</td>
+                    </tr>
+                    <tr>
+                        <td>Tercer Partido</td>
+                        <td>Derrota</td>
+                        <td>15-0</td>
+                        <td>Eliminados del torneo</td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <div class="image-row">
+            <img src="https://i.imgur.com/XcOyS5P.jpeg" alt="Equipo Cobras Basketball varonil" height="400" width="500">
+            <img src="https://imgur.com/B6iHYwH.jpeg" alt="Equipo Cobras Basketball femenil" height="400" width="500">
+
+        </div>
+        
+        
+        <section class="calendar-container">
+            <h2>Calendario de Partidos</h2>
+            <div id="calendar-nav">
+                <button id="prev-month" onclick="changeMonth(-1)">Anterior</button>
+                <span id="month-year"></span>
+                <button id="next-month" onclick="changeMonth(1)">Siguiente</button>
+            </div>
+            <div id="calendar"></div>
+            
+            <!-- Formulario para agregar evento -->
+            <div id="event-form" style="display: none;">
+                <h3>Agregar Evento</h3>
+                <form id="add-event-form">
+                    <label for="event-title">Título del Evento:</label>
+                    <input type="text" id="event-title" required />
+                    <br />
+                    <label for="event-description">Descripción:</label>
+                    <textarea id="event-description" required></textarea>
+                    <br />
+                    <button type="submit">Guardar Evento</button>
+                    <button type="button" onclick="hideEventForm()">Cancelar</button>
+                </form>
+            </div>
+        
+            <!-- Detalles del evento -->
+            <div id="event-details" style="display: none;">
+                <h3>Detalles del Evento</h3>
+                <p id="event-description-text"></p>
+                <button onclick="hideEventDetails()">Cerrar</button>
+            </div>
+        </section>
+    
+    <footer>
+        <p>&copy; Todos los derechos reservados.
+            <a href="contactos.html">Contáctanos</a>
+        </p>
+    </footer>
+    <script src="calendar.js"></script>
+</body>
+</html>

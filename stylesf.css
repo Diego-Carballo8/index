@@ -1,0 +1,179 @@
+/* Pista de carrera (ahora vertical) */
+.race-track {
+    position: fixed;
+    top: 10%;
+    left: 5%; /* Ubicación en la página */
+    width: 20px; /* Ancho de la pista */
+    height: 80%; /* Altura de la pista */
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* Serpiente */
+.snake {
+    position: absolute;
+    top: 0; /* Inicia en la parte superior de la pista */
+    left: 0;
+    width: 20px;
+    height: 40px; /* Cambiar ancho y alto para que encaje en una pista vertical */
+    background-color: green;
+    border-radius: 10px;
+    transition: top 0.1s linear; /* Movimiento suave hacia abajo */
+}
+
+/* Línea de meta */
+.finish-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 10px;
+    background-color: red;
+}
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el tamaño máximo */
+    margin: 0 auto; /* Centra el contenedor */
+}
+.imagen {
+    width: 45%; /* Ajusta el tamaño de las imágenes */
+}
+header {
+    background: url('https://i.imgur.com/IGdONBT.jpeg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 80px 20px 20px;
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+/* Estilos del menú de navegación */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos del menú de navegación */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-regresar {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+.btn-regresar:hover {
+    background-color: #5a6268;
+    transform: translateY(-3px);
+}
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}/* Main Content */
+main {
+    padding: 30px 20px;
+    text-align: justify;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h4 {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #555;
+}
+
+main h2 {
+    font-size: 2em;
+    color: #333;
+    margin: 30px 0;
+}
+
+main div {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+main img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+p{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: top;
+}
+/* Estilo para la navegación */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+ul li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,157 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo difuminado para la página completa */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #410303f8, #da1e57, #410303f8, #410303f8);
+    background-size: 200% 200%; /* Ampliación para un efecto más suave */
+    animation: gradientAnimation 15s ease infinite; /* Animación suave */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Animación de fondo degradado */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Estilo del header */
+.header-section {
+    width: 100%;
+    height: 35vh;
+    background: linear-gradient(120deg, rgba(0, 123, 255, 0.7), rgba(255, 99, 71, 0.7)), 
+                url('https://i.imgur.com/IGdONBT.jpeg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de login */
+.login-container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.493); /* Fondo semitransparente */
+    padding: 20px;
+    margin-bottom: -30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fade-in 1.5s ease-out;
+}
+
+/* Estilos del formulario */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1c6097;
+}
+
+/* Estilo de los inputs y botones */
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #00aaff;
+    box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Estilo para el enlace de "¿Olvidaste tu contraseña?" */
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: #00aaff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #0088cc;
+}
+
+/* Estilo para el enlace de registro */
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.register-link a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+    color: #0088cc;
+}
+
+/* Animación de fade-in para el contenedor de login */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para el footer */
+.footer {
+    background-color: #333; /* Fondo oscuro */
+    color: white;            /* Texto blanco */
+    text-align: center;      /* Centrar el texto */
+    padding: 20px;           /* Espaciado alrededor */
+    margin-top: auto;        /* Empuja el footer hacia el fondo de la página */
+    width: 100%;             /* Asegura que el footer ocupe todo el ancho */
+    position: relative;      /* Asegura que se quede al final de la página */
+}
+
+.footer p {
+    margin: 0;               /* Eliminar márgenes del texto */
+    font-size: 14px;         /* Tamaño de fuente adecuado */
+}

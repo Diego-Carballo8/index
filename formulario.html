@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles_form.css">
+</head>
+<body>
+    <header class="header-section">
+        <img src="https://i.imgur.com/IGdONBT.jpeg" alt="Header Image" class="header-image">
+    </header>
+     <!-- Formulario -->
+    <div class="form-container">
+        <h2>Formulario de Preferencias Deportivas</h2>
+        <form action="index.html" method="POST">  <!-- Aquí se agrega el action para redirigir -->
+            <!-- Pregunta Nombre Completo -->
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <!-- Pregunta Edad -->
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required min="1" max="120">
+            </div>
+
+            <!-- Pregunta Sexo -->
+            <div class="form-group">
+                <label>Sexo:</label>
+                <div class="radio-group">
+                    <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="sexo" value="femenino" required>
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="otro" name="sexo" value="otro" required>
+                    <label for="otro">Otro</label>
+                </div>
+            </div>
+
+            <!-- Pregunta Deporte Preferido -->
+            <div class="form-group">
+                <label for="deporte">Deporte Preferido:</label>
+                <select id="deporte" name="deporte" required>
+                    <option value="futbol">Fútbol</option>
+                    <option value="basketball">Baloncesto</option>
+                    <option value="tenis">Tenis</option>
+                    <option value="natacion">Natación</option>
+                    <option value="ciclismo">Ciclismo</option>
+                    <option value="atletismo">Atletismo</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+
+            <!-- Pregunta Frecuencia de Práctica -->
+            <div class="form-group">
+                <label for="frecuencia">¿Con qué frecuencia practicas tu deporte preferido?</label>
+                <select id="frecuencia" name="frecuencia" required>
+                    <option value="diariamente">Diariamente</option>
+                    <option value="semanalmente">Semanalmente</option>
+                    <option value="mensualmente">Mensualmente</option>
+                    <option value="ocasionalmente">Ocasionalmente</option>
+                    <option value="no-practico">No lo practico</option>
+                </select>
+            </div>
+
+            <!-- Pregunta de Motivación -->
+            <div class="form-group">
+                <label for="motivacion">¿Qué te motiva a practicar deportes?</label>
+                <textarea id="motivacion" name="motivacion" rows="4" placeholder="Escribe tus motivos para practicar deportes..."></textarea>
+            </div>
+
+            <!-- Pregunta Sobre Competencia -->
+            <div class="form-group">
+                <label for="competencia">¿Te interesa competir en tu deporte favorito?</label>
+                <div class="radio-group">
+                    <input type="radio" id="si-competir" name="competencia" value="si" required>
+                    <label for="si-competir">Sí</label>
+                    <input type="radio" id="no-competir" name="competencia" value="no" required>
+                    <label for="no-competir">No</label>
+                </div>
+            </div>
+
+            <!-- Pregunta de Hábitos Deportivos -->
+            <div class="form-group">
+                <label for="habitos">¿Qué tipo de actividad física prefieres?</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="cardio" name="habitos" value="cardio">
+                    <label for="cardio">Cardio (Correr, ciclismo, etc.)</label><br>
+                    <input type="checkbox" id="fuerza" name="habitos" value="fuerza">
+                    <label for="fuerza">Fuerza (Pesas, entrenamiento funcional, etc.)</label><br>
+                    <input type="checkbox" id="flexibilidad" name="habitos" value="flexibilidad">
+                    <label for="flexibilidad">Flexibilidad (Yoga, estiramientos, etc.)</label><br>
+                    <input type="checkbox" id="otros-habitos" name="habitos" value="otros">
+                    <label for="otros-habitos">Otros</label><br>
+                </div>
+            </div>
+
+            <!-- Pregunta de Lesiones Deportivas -->
+            <div class="form-group">
+                <label for="lesiones">¿Has sufrido alguna lesión deportiva?</label>
+                <div class="radio-group">
+                    <input type="radio" id="si-lesion" name="lesiones" value="si" required>
+                    <label for="si-lesion">Sí</label>
+                    <input type="radio" id="no-lesion" name="lesiones" value="no" required>
+                    <label for="no-lesion">No</label>
+                </div>
+            </div>
+
+            <!-- Pregunta de Equipos -->
+            <div class="form-group">
+                <label for="equipo">¿Perteneces a algún equipo deportivo?</label>
+                <div class="radio-group">
+                    <input type="radio" id="si-equipo" name="equipo" value="si" required>
+                    <label for="si-equipo">Sí</label>
+                    <input type="radio" id="no-equipo" name="equipo" value="no" required>
+                    <label for="no-equipo">No</label>
+                </div>
+            </div>
+
+            <!-- Pregunta de Participación en Eventos -->
+            <div class="form-group">
+                <label for="eventos">¿Te gustaría participar en eventos deportivos organizados?</label>
+                <div class="radio-group">
+                    <input type="radio" id="si-eventos" name="eventos" value="si" required>
+                    <label for="si-eventos">Sí</label>
+                    <input type="radio" id="no-eventos" name="eventos" value="no" required>
+                    <label for="no-eventos">No</label>
+                </div>
+            </div>
+
+            <!-- Comentarios -->
+            <div class="form-group">
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí..."></textarea>
+            </div>
+
+            <!-- Botón de Enviar -->
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Formulario de Preferencias Deportivas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

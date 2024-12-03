@@ -1,0 +1,144 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo difuminado para la página completa */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #410303f8, #da1e57, #410303f8, #410303f8);
+    background-size: 200% 200%; /* Ampliación para un efecto más suave */
+    animation: gradientAnimation 15s ease infinite; /* Animación suave */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Animación de fondo degradado */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Estilo del header */
+.header-section {
+    width: 150%;
+    height: 35vh;
+    background: linear-gradient(120deg, rgba(0, 123, 255, 0.7), rgba(255, 99, 71, 0.7)), 
+                url('https://i.imgur.com/IGdONBT.jpeg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Contenedor principal del formulario */
+.form-container {
+    background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo del encabezado del formulario */
+h2 {
+    text-align: center;
+    color: #f0f0f0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo general de las preguntas */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+/* Estilo para los inputs, selects y textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #444;
+    color: white;
+}
+
+/* Estilo de los botones de radio */
+.radio-group input {
+    margin-right: 10px;
+}
+
+.radio-group label {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+/* Estilo del checkbox group */
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    font-size: 16px;
+}
+
+/* Estilo del botón de envío */
+.form-group input[type="submit"] {
+    background-color: #b12d05;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #776d6b;
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    color: white;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .header-image {
+        max-height: 250px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

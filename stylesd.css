@@ -1,0 +1,176 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e75656f8, #d14972, #d64f4ff8, #da1e57); /* Fondo difuminado */
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Header */
+.header-fondo {
+    background: url('https://i.imgur.com/IGdONBT.jpeg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header-fondo h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo para los encabezados h4 */
+main h4 {
+    text-align: justify;
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418); /* Sombra ligera */
+}
+
+/* Estilos del carrusel */
+section{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+/* Botones de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #6dd5ed;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Texto en el main */
+main h4 {
+    text-align: justify;
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: #333333; /* Color más suave */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418); /* Sombra ligera */
+}
+/* Pista de carrera (ahora vertical) */
+.race-track {
+    position: fixed;
+    top: 10%;
+    left: 5%; /* Ubicación en la página */
+    width: 20px; /* Ancho de la pista */
+    height: 80%; /* Altura de la pista */
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* Serpiente */
+.snake {
+    position: absolute;
+    top: 0; /* Inicia en la parte superior de la pista */
+    left: 0;
+    width: 20px;
+    height: 40px; /* Cambiar ancho y alto para que encaje en una pista vertical */
+    background-color: green;
+    border-radius: 10px;
+    transition: top 0.1s linear; /* Movimiento suave hacia abajo */
+}
+
+/* Línea de meta */
+.finish-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 10px;
+    background-color: red;
+}
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el tamaño máximo */
+    margin: 0 auto; /* Centra el contenedor */
+}
+.imagen {
+    width: 45%; /* Ajusta el tamaño de las imágenes */
+}
