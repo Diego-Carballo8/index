@@ -681,7 +681,7 @@ footer a:hover {
 /*futbol*/
 /*tabla femenil*/
 .tabla {
-    width: 70%;
+    width: 100%;
     border-collapse: collapse;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
@@ -697,7 +697,7 @@ footer a:hover {
 }
 
 .tabla-head {
-    background-color: #700606;
+    background-color: #750a0a;
 }
 
 .tabla-header {
@@ -711,28 +711,15 @@ footer a:hover {
     font-size: 16px;
 }
 
-.tabla-fila:nth-child(even) {
-    background-color: #f9f9f9;
+
+footer a:hover {
+    color: #ffffff;
 }
 
-.tabla-fila:hover {
-    background-color: #f1f1f1;
-}
-
-.tabla-celda {
-    text-align: center;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-}
-
-.tabla-celda:first-child {
-    text-align: left;
-    padding-left: 20px;
-}
 
 /*futbol varonil*/
 .tabla_2 {
-    width: 70%;
+    width: 100%;
     border-collapse: collapse;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
