@@ -753,3 +753,118 @@ footer a:hover {
 footer a:hover {
     color: #ffffff;
 }
+/* Estilo para el contenedor del calendario */
+.calendar-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo para el título del calendario */
+.calendar-container h2 {
+    font-size: 2rem;
+    color: #004085;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los botones de navegación */
+#calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#calendar-nav button {
+    padding: 10px 20px;
+    background-color: #eb5a5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calendar-nav button:hover {
+    background-color: #ff4040;
+}
+
+/* Estilo para la tabla del calendario */
+#calendar {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+#calendar table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#calendar th, #calendar td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#calendar th {
+    background-color: #eb5a5a;
+    color: #fff;
+    font-weight: bold;
+}
+
+#calendar td {
+    background-color: #f9f9f9;
+}
+
+#calendar td:hover {
+    background-color: #ffb3b3;
+    cursor: pointer;
+}
+
+#calendar .current-day {
+    background-color: #ff5a5a;
+    color: #fff;
+}
+
+#calendar .event {
+    display: block;
+    font-size: 0.8rem;
+    color: #007bff;
+}
+
+#calendar .prev-month, #calendar .next-month {
+    color: #ccc;
+}
+
+/* Estilo para los detalles del partido */
+#event-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#event-details h3 {
+    color: #004085;
+}
+
+#event-details p {
+    font-size: 1.2rem;
+}
+
+#event-details button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#event-details button:hover {
+    background-color: #0056b3;
+}
