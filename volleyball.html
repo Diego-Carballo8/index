@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -6,6 +7,7 @@
         <title>COBRAS VOLEIBOL</title>
         <link rel="stylesheet" href="stylesr.css"> <!-- Enlace a tu archivo CSS -->
     </head>
+
     <body>
         <header class="header-fondoo">
             <h1 class="tema_voleibol">COBRAS VOLEIBOL</h1> <!-- Título principal -->
@@ -18,7 +20,19 @@
         </header>
 
         <main>
-            <h4></h4>
+            <p>El desempeño de los equipos de voleibol del CBTIS 258 en los torneos ha sido destacado a lo largo de los años. Los estudiantes del instituto participan en competencias inter-escolares y regionales, donde han obtenido excelentes resultados en diversas ediciones. Estos torneos incluyen tanto competiciones locales como regionales, en las que el instituto ha demostrado un alto nivel de preparación y competitividad.<br>
+
+                Los equipos de voleibol masculino y femenino han sido parte de varios campeonatos, destacándose por su excelente coordinación y capacidad para adaptarse a las dinámicas del juego. En muchos casos, los estudiantes no solo han logrado buenos puestos, sino que han demostrado una actitud de respeto y compañerismo, lo que resalta los valores educativos que promueve el CBTIS 258. Estos valores son fundamentales para el desarrollo integral de los estudiantes, quienes aprenden a trabajar en equipo, a superar obstáculos y a mantener una mentalidad positiva frente a los retos.<br>
+                
+                La formación técnica y táctica que reciben los jugadores es clave para su éxito en la cancha. Los entrenadores, comprometidos con el rendimiento de sus equipos, realizan sesiones de práctica que incluyen aspectos físicos, estratégicos y psicológicos, brindando a los estudiantes herramientas para enfrentar cualquier tipo de competencia. Además, el instituto ha contado con el apoyo de infraestructura adecuada, como canchas de voleibol bien equipadas, lo que favorece el entrenamiento constante y de calidad.<br>
+                
+                A lo largo de los años, los equipos del CBTIS 258 han alcanzado importantes logros, consolidándose como una de las instituciones más competitivas en los torneos de voleibol a nivel local y regional. La participación en estos eventos no solo ha permitido a los estudiantes destacar en el ámbito deportivo, sino también reforzar su sentido de pertenencia y orgullo hacia su institución.<br>
+                
+                En resumen, los equipos de voleibol del CBTIS 258 continúan demostrando un desempeño sobresaliente, destacándose por su preparación, actitud y los valores que representan, siendo un ejemplo de la importancia de la actividad física y el trabajo en equipo dentro de la educación.<br>
+                
+                
+                
+                Esto les a dado el pase a la Estatal donde solo nos queda desearles la major de la suertes y que ganen la Estatal gracias.</p>
         </main>
 
 
@@ -31,7 +45,7 @@
                     <tr>
                         <th>Partido</th>
                         <th>Resultado</th>
-                        <th>Marcador</th>
+                        <th>Sets</th>
                         <th>Posición Final</th>
                     </tr>
                 </thead>
@@ -39,25 +53,25 @@
                     <tr>
                         <td>Primer Partido</td>
                         <td>Victoria</td>
-                        <td>25-22</td>
+                        <td>2-0</td>
                         <td>Ganamos el primer partido</td>
                     </tr>
                     <tr>
                         <td>Segundo Partido</td>
                         <td>Victoria</td>
-                        <td>25-20</td>
+                        <td>2-0</td>
                         <td>Avanzaron a semifinales</td>
                     </tr>
                     <tr>
                         <td>Tercer Partido</td>
                         <td>Victoria</td>
-                        <td>25-18</td>
+                        <td>2-0</td>
                         <td>Avanzamos a la final</td>
                     </tr>
                     <tr>
                         <td>Cuarto Partido</td>
                         <td>Derrota</td>
-                        <td>22-25</td>
+                        <td>0-2</td>
                         <td>Perdimos la final</td>
                     </tr>
                 </tbody>
@@ -70,7 +84,7 @@
                     <tr>
                         <th>Partido</th>
                         <th>Resultado</th>
-                        <th>Marcador</th>
+                        <th>Sets</th>
                         <th>Posición Final</th>
                     </tr>
                 </thead>
@@ -78,46 +92,81 @@
                     <tr>
                         <td>Primer Partido</td>
                         <td>Victoria</td>
-                        <td>25-21</td>
+                        <td>2-0</td>
                         <td>Ganamos el primer partido</td>
                     </tr>
                     <tr>
                         <td>Segundo Partido</td>
                         <td>Victoria</td>
-                        <td>27-25</td>
+                        <td>2-0</td>
                         <td>Avanzamos a semifinal</td>
                     </tr>
                     <tr>
                         <td>Tercer Partido</td>
                         <td>Victoria</td>
-                        <td>25-22</td>
+                        <td>2-0</td>
                         <td>Avanzamos a la final</td>
                     </tr>
                     <tr>
                         <td>Cuarto Partido</td>
                         <td>Victoria</td>
-                        <td>15-12</td>
+                        <td>2-0</td>
                         <td>Pasamos a la estatal</td>
                     </tr>
                    
                 </tbody>
-            </table>
+            </table>c
         </div>
-
-        <section>
-            <img src="https://imgur.com/nMQmw9k.jpg" alt="Volleyball varonil">
-            <img src="https://imgur.com/m4rp5DW.jpg" alt="Volleyball femenil">
-        </section>
+        <div style="border: 2px solid  #fdd7d7;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;">
+            <section class="imagenes">
+                <img src="https://imgur.com/nMQmw9k.jpg" alt="Volleyball varonil">
+                <img src="https://imgur.com/m4rp5DW.jpg" alt="Volleyball femenil">
+               </section>
+        </div>
         
-    </main>
     
+    <section class="calendar-container">
+        <h2>Calendario de Partidos</h2>
+        <div id="calendar-nav">
+            <button id="prev-month" onclick="changeMonth(-1)">Anterior</button>
+            <span id="month-year"></span>
+            <button id="next-month" onclick="changeMonth(1)">Siguiente</button>
+        </div>
+        <div id="calendar"></div>
+        
+        <!-- Formulario para agregar evento -->
+        <div id="event-form" style="display: none;">
+            <h3>Agregar Evento</h3>
+            <form id="add-event-form">
+                <label for="event-title">Título del Evento:</label>
+                <input type="text" id="event-title" required />
+                <br />
+                <label for="event-description">Descripción:</label>
+                <textarea id="event-description" required></textarea>
+                <br />
+                <button type="submit">Guardar Evento</button>
+                <button type="button" onclick="hideEventForm()">Cancelar</button>
+            </form>
+        </div>
+    
+        <!-- Detalles del evento -->
+        <div id="event-details" style="display: none;">
+            <h3>Detalles del Evento</h3>
+            <p id="event-description-text"></p>
+            <button onclick="hideEventDetails()">Cerrar</button>
+        </div>
+    </section>
+
+
     <footer>
         <p>&copy; Todos los derechos reservados.
             <a href="contactos.html">Contáctanos</a>
         </p>
     </footer>
-</body>
-</html>
-
+    <script src="calendar.js"></script>
     </body>
 </html>
